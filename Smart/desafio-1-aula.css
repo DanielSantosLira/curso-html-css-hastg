@@ -3,20 +3,30 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
+  /* font-size: 10px; */
   font-size: 62.5%;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 1.8rem;
   line-height: 1.4;
 }
 
+main {
+  display: flex;
+  flex-flow: column;
+  gap: 7.63rem;
+  padding: 2.4rem;
+}
+
 h1 {
   font-size: 4.5rem;
   line-height: 1;
-  margin-bottom: 1.2rem;
 }
+
 h1::first-letter {
   font-size: 6.4rem;
 }
@@ -24,25 +34,29 @@ h1::first-letter {
 h2 {
   font-size: 3.2rem;
   line-height: 1.1;
-  margin-bottom: 2.4rem;
 }
 
 h3 {
   font-size: 2.4rem;
   line-height: 1.2;
-  margin-bottom: 1.8rem;
 }
+
 figure {
-  margin-bottom: 1.2rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
+
+figure img {
+  width: 30rem;
+}
+
 figcaption {
   font-size: 1.2rem;
   font-style: italic;
-  margin-left: 3.2rem;
 }
-p {
-  margin-bottom: 0.6rem;
-}
+
+/* LVHA */
 
 a:link,
 a:visited {
@@ -52,27 +66,28 @@ a:visited {
   font-weight: 700;
   text-decoration: double;
   text-decoration-line: underline;
-  margin-bottom: 2.4rem;
 }
+
 a:hover,
 a:active {
   color: #0588c4;
 }
+
 ul {
-  margin-bottom: 2.4rem;
   margin-left: 2.4rem;
 }
+
 li {
   color: #035276;
   font-style: italic;
-  margin-bottom: 0.6rem;
 }
-hr {
-  display: none;
+
+section {
+  display: flex;
+  flex-flow: column;
+  gap: 3.12rem;
+  align-items: center;
 }
-/* h1 span {
-  color: #0588c4;
-} */
 
 .realce-h1 {
   color: #0588c4;
@@ -93,9 +108,7 @@ p strong {
   color: #0588c4;
   text-decoration: underline;
 }
-section {
-  padding: 2.4rem;
-}
+
 .div-condicoes {
   display: inline-block;
   background-color: #035276;
@@ -104,7 +117,45 @@ section {
   padding: 2.4rem 3.2rem;
   border-radius: 2rem;
 }
+
 .div-condicoes .realce-italico,
 .div-condicoes .realce-underline {
   color: #78d4ff;
+}
+
+.img-wpp {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  width: 8.5rem;
+}
+
+.container-figure {
+  display: flex;
+  gap: 4.88rem;
+}
+
+.container-precocondicoes {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 3.12rem;
+}
+
+.container-preco,
+.div-condicoes {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.container-listas {
+  display: flex;
+  gap: 3.9rem;
+}
+
+.container-lista {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
 }
